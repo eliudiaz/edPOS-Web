@@ -32,10 +32,8 @@
                     <tbody>
                     @foreach($item as $value)
                         <tr>
-                            {{--<td>{{ $value->id }}</td>--}}
                             <td>{{ $value->upc_ean_isbn }}</td>
                             <td>{{ $value->item_name }}</td>
-                            {{--<td>{{ $value->size }}</td>--}}
                             <td>{{ number_format($value->cost_price, 2, '.', ',') }}</td>
                             <td>{{ number_format($value->selling_price, 2, '.', ',') }}</td>
                             <td><strong>{{ $value->quantity }}</strong> </td>

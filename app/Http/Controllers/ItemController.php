@@ -27,7 +27,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Item::where('type', 1)->get();
+        $items = Item::where('enabled',1)->get();
         return view('item.index')->with('item', $items);
     }
 
@@ -183,8 +183,9 @@ class ItemController extends Controller
      */
     public function destroy($id)
     {
-        $items = Item::find($id);
-        $items->delete();
+        $item = Item::find($id);
+        $item->enabled=0;
+        $item->save();
 
         Session::flash('message', 'You have successfully deleted item');
         return Redirect::to('items');
