@@ -72,7 +72,13 @@
                         <table class="table table-bordered">
                             <tr><th>{{trans('sale.item_id')}}</th><th>{{trans('sale.item_name')}}</th><th>{{trans('sale.price')}}</th><th>{{trans('sale.quantity')}}</th><th>{{trans('sale.total')}}</th><th>&nbsp;</th></tr>
                             <tr ng-repeat="newsaletemp in saletemp">
-                            <td>@{{newsaletemp.item_id}}</td><td>@{{newsaletemp.item.item_name}}</td><td>@{{newsaletemp.item.selling_price | currency:"Q."}}</td><td><input type="text" style="text-align:center" autocomplete="off" name="quantity" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.quantity" size="2"></td><td>@{{newsaletemp.item.selling_price * newsaletemp.quantity | currency:"Q."}}</td><td><button class="btn btn-danger btn-xs" type="button" ng-click="removeSaleTemp(newsaletemp.id)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
+                                <td>@{{newsaletemp.item_id}}</td>
+                                <td>@{{newsaletemp.item.item_name}}</td>
+                                {{--<td>@{{newsaletemp.item.selling_price | currency:"Q."}}</td>--}}
+                                <td><input type="text" style="text-align:center" autocomplete="off" name="selling_price" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.selling_price" size="5"></td>
+                                <td><input type="text" style="text-align:center" autocomplete="off" name="quantity" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.quantity" size="2"></td>
+                                <td>@{{newsaletemp.selling_price * newsaletemp.quantity | currency:"Q."}}</td>
+                                <td><button class="btn btn-danger btn-xs" type="button" ng-click="removeSaleTemp(newsaletemp.id)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
                             </tr>
                         </table>
 
