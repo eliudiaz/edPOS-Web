@@ -4,6 +4,7 @@ use App\Http\Requests\ItemRequest;
 use App\Inventory;
 use App\Item;
 use Auth;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Lang;
 use Image;
 use Input;
@@ -45,7 +46,7 @@ class ItemController extends Controller
         try {
             Item::where('upc_ean_isbn', $code)->firstOrFail();
             return true;
-        } catch (Exception $e) {
+        } catch (ModelNotFoundException  $e) {
             return false;
         }
     }
@@ -66,7 +67,7 @@ class ItemController extends Controller
         $items = new Item;
         $items->upc_ean_isbn = $request->get('upc_ean_isbn');
         $items->item_name = $request->get('item_name');
-        $items->size = "none"; //$request->get('size');
+        $items->size = "none";
         $items->description = $request->get('description');
         $items->cost_price = $request->get('cost_price');
         $items->selling_price = $request->get('selling_price');
