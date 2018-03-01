@@ -4,6 +4,7 @@ use App\Http\Requests\ItemRequest;
 use App\Inventory;
 use App\Item;
 use Auth;
+use Illuminate\Support\Facades\Lang;
 use Image;
 use Input;
 use Redirect;
@@ -39,6 +40,16 @@ class ItemController extends Controller
         return view('item.create');
     }
 
+    private function itemExists($code)
+    {
+        try {
+            Item::where('upc_ean_isbn', $code)->firstOrFail();
+            return true;
+        } catch (Exception $e) {
+            return false;
+        }
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -46,21 +57,27 @@ class ItemController extends Controller
      */
     public function store(ItemRequest $request)
     {
+
+        if ($this->itemExists($request->get("upc_ean_isbn"))) {
+            Session::flash("error_msg", Lang::get("item.duplicated_error"));
+            return Redirect::to('items/create');
+        }
+
         $items = new Item;
-        $items->upc_ean_isbn = Input::get('upc_ean_isbn');
-        $items->item_name = Input::get('item_name');
-        $items->size = "none"; //Input::get('size');
-        $items->description = Input::get('description');
-        $items->cost_price = Input::get('cost_price');
-        $items->selling_price = Input::get('selling_price');
-        $items->quantity = Input::get('quantity');
+        $items->upc_ean_isbn = $request->get('upc_ean_isbn');
+        $items->item_name = $request->get('item_name');
+        $items->size = "none"; //$request->get('size');
+        $items->description = $request->get('description');
+        $items->cost_price = $request->get('cost_price');
+        $items->selling_price = $request->get('selling_price');
+        $items->quantity = $request->get('quantity');
         $items->save();
         // process inventory
-        if (!empty(Input::get('quantity'))) {
+        if (!$request->has('quantity')) {
             $inventories = new Inventory;
             $inventories->item_id = $items->id;
             $inventories->user_id = Auth::user()->id;
-            $inventories->in_out_qty = Input::get('quantity');
+            $inventories->in_out_qty = $request->get('quantity');
             $inventories->remarks = 'Manual Edit of Quantity';
             $inventories->save();
         }

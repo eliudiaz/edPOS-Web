@@ -28,4 +28,5 @@ return [
     'employee' => 'Empleado',
     'in_out_qty' => 'Cantidad Entrada/Salida',
     'remarks' => 'Observaciones',
+    'duplicated_error' => 'You cannot add duplicated codes!'
 ];

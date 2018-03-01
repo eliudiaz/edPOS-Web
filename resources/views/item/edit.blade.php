@@ -22,11 +22,6 @@
 					{!! Form::text('item_name', null, array('class' => 'form-control')) !!}
 					</div>
 
-					{{--<div class="form-group">--}}
-					{{--{!! Form::label('size', trans('item.size')) !!}--}}
-					{{--{!! Form::text('size', null, array('class' => 'form-control')) !!}--}}
-					{{--</div>--}}
-
 					<div class="form-group">
 					{!! Form::label('description', trans('item.description')) !!}
 					{!! Form::text('description', null, array('class' => 'form-control')) !!}
