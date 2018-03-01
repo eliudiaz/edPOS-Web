@@ -45,7 +45,8 @@ Route::group(['middleware' => 'languange'], function()
 
 	Route::resource('employees', 'EmployeeController');
 
-	Route::resource('api/item', 'ReceivingApiController');
+//	Route::resource('api/item', 'ReceivingApiController');
+    Route::resource('api/item', 'ItemController@listAll');
 	Route::resource('api/receivingtemp', 'ReceivingTempApiController');
 
 	Route::resource('api/saletemp', 'SaleTempApiController');
@@ -57,17 +58,4 @@ Route::group(['middleware' => 'languange'], function()
 
 	Route::resource('tutapos-settings', 'TutaposSettingController');
 });
-/*
-Route::group(['middleware' => 'role'], function()
-    {
-        Route::get('items', function()
-        {
-            return 'Is admin';
-        });
-    });
 
-Route::get('sales', [  
-    'middleware' => 'role',
-    'uses' => 'SaleController@index'
-]);
-*/

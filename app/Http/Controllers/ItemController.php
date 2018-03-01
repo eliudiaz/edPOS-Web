@@ -5,6 +5,7 @@ use App\Inventory;
 use App\Item;
 use Auth;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Response;
 use Illuminate\Support\Facades\Lang;
 use Image;
 use Input;
@@ -27,8 +28,14 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Item::where('enabled',1)->get();
+        $items = Item::where('enabled', 1)->get();
         return view('item.index')->with('item', $items);
+    }
+
+    public function listAll()
+    {
+        $items = Item::where('enabled', 1)->get();
+        return Response::json($items);
     }
 
     /**
@@ -184,7 +191,7 @@ class ItemController extends Controller
     public function destroy($id)
     {
         $item = Item::find($id);
-        $item->enabled=0;
+        $item->enabled = 0;
         $item->save();
 
         Session::flash('message', 'You have successfully deleted item');
