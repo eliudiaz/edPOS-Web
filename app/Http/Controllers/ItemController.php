@@ -5,11 +5,12 @@ use App\Inventory;
 use App\Item;
 use Auth;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Response;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
 use Image;
 use Input;
 use Redirect;
+use Response;
 use Session;
 use Validator;
 
@@ -26,9 +27,18 @@ class ItemController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $items = Item::where('enabled', 1)->get();
+        $query = (new Item)->newQuery();
+
+        if ($request->has("code")) {
+            $query->where('upc_ean_isbn', $request->get('code'));
+        }
+        if ($request->has("name")) {
+            $query->where('item_name', 'like', '%' . $request->get('name') . '%');
+        }
+        $items = $query->where('enabled', 1)->get();
+
         return view('item.index')->with('item', $items);
     }
 

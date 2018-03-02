@@ -6,6 +6,14 @@
             <div class="panel-heading">{{trans('item.list_items')}}</div>
 
             <div class="panel-body">
+                <form class="form-inline" method="get" action="/items">
+                    {!! Form::label('code', trans('item.search_code') ) !!}
+                    {!! Form::text('code', Input::old('code'), array('class' => 'form-control')) !!}
+                    {!! Form::label('name', trans('item.search_name') ) !!}
+                    {!! Form::text('name', Input::old('name'), array('class' => 'form-control')) !!}
+                    <button class="btn btn-success" type="submit">Filtrar</button>
+                    <hr/>
+                </form>
                 <a class="btn btn-small btn-success"
                    href="{{ URL::to('items/create') }}">{{trans('item.new_item')}}</a>
                 <hr/>
@@ -16,6 +24,7 @@
                 @if (Session::has('error'))
                     <div class="alert alert-danger">{{ Session::get('error') }}</div>
                 @endif
+
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
@@ -36,7 +45,7 @@
                             <td>{{ $value->item_name }}</td>
                             <td>{{ number_format($value->cost_price, 2, '.', ',') }}</td>
                             <td>{{ number_format($value->selling_price, 2, '.', ',') }}</td>
-                            <td><strong>{{ $value->quantity }}</strong> </td>
+                            <td><strong>{{ $value->quantity }}</strong></td>
                             <td>{{  number_format($value->quantity*$value->cost_price, 2, '.', ',')  }}</td>
                             <td>
 

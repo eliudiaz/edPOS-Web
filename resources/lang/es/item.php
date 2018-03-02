@@ -8,8 +8,8 @@ return [
     'upc_ean_isbn' => 'Codigo',
     'item_name' => 'Nombre del Producto',
     'size' => 'Tamaño',
-    'cost_price' => 'Costo (Q)',
-    'selling_price' => 'Precio (Q)',
+    'cost_price' => 'P. Costo (Q)',
+    'selling_price' => 'P. Venta (Q)',
     'quantity' => 'Existencia',
     'stock_worth' => 'Valor Inventario (Q)',
     'avatar' => 'Imagen',
@@ -28,5 +28,8 @@ return [
     'employee' => 'Empleado',
     'in_out_qty' => 'Cantidad Entrada/Salida',
     'remarks' => 'Observaciones',
-    'duplicated_error' => 'El codigo ingresao esta repetido!'
+    'duplicated_error' => 'El codigo ingresao esta repetido!',
+    'search_btn' => 'Buscar',
+    'search_code' => 'Codigo',
+    'search_name' => 'Nombre'
 ];
