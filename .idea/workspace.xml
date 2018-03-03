@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcb41daa-e8b1-4273-8ed5-ffb50c9d209f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2018_03_02_192900_customer_discount_field.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/es/item.php" afterPath="$PROJECT_DIR$/resources/lang/es/item.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/item/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/item/index.blade.php" />
-    </list>
+    <list default="true" id="dcb41daa-e8b1-4273-8ed5-ffb50c9d209f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -537,16 +531,15 @@
       <workItem from="1519860108940" duration="18000" />
       <workItem from="1519907502439" duration="1340000" />
       <workItem from="1519917980681" duration="9588000" />
-      <workItem from="1519996190041" duration="5637000" />
+      <workItem from="1519996190041" duration="5698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60146000" />
+    <option name="totallyTimeSpent" value="60207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
