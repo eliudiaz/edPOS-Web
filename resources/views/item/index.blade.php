@@ -6,14 +6,15 @@
             <div class="panel-heading">{{trans('item.list_items')}}</div>
 
             <div class="panel-body">
-                <form class="form-inline" method="get" action="/items">
-                    {!! Form::label('code', trans('item.search_code') ) !!}
+                {!! Form::model($search, array('route' => array('items.index'), 'method' => 'GET','class'=>'form-inline')) !!}
+                {!! Form::label('code', trans('item.search_code') ) !!}
                     {!! Form::text('code', Input::old('code'), array('class' => 'form-control')) !!}
                     {!! Form::label('name', trans('item.search_name') ) !!}
                     {!! Form::text('name', Input::old('name'), array('class' => 'form-control')) !!}
-                    <button class="btn btn-success" type="submit">Filtrar</button>
+                    <button class="btn btn-success" type="submit">{{trans('item.search_btn')}}</button>
+                    <a class="btn btn-small btn-success"
+                   href="{{ URL::to('items') }}">{{trans('item.clear_btn')}}</a>
                     <hr/>
-                </form>
                 <a class="btn btn-small btn-success"
                    href="{{ URL::to('items/create') }}">{{trans('item.new_item')}}</a>
                 <hr/>

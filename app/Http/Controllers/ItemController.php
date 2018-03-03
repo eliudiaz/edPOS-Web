@@ -37,9 +37,9 @@ class ItemController extends Controller
         if ($request->has("name")) {
             $query->where('item_name', 'like', '%' . $request->get('name') . '%');
         }
-        $items = $query->where('enabled', 1)->get();
-
-        return view('item.index')->with('item', $items);
+        $item = $query->where('enabled', 1)->get();
+        $search = array("code" => $request->get('code', ''), "name" => $request->get('name', ''));
+        return view('item.index', compact('item', 'search'));
     }
 
     public function listAll()

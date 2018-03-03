@@ -30,6 +30,7 @@ return [
     'remarks' => 'Observaciones',
     'duplicated_error' => 'El codigo ingresao esta repetido!',
     'search_btn' => 'Buscar',
+    'clear_btn' => 'Limpiar',
     'search_code' => 'Codigo',
     'search_name' => 'Nombre'
 ];
