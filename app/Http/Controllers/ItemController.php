@@ -37,8 +37,14 @@ class ItemController extends Controller
         if ($request->has("name")) {
             $query->where('item_name', 'like', '%' . $request->get('name') . '%');
         }
+        if ($request->has("status")) {
+            $status = $request->get("status");
+            $query->where('quantity', $status == 1 ? '=' : '>', 0);
+        }
         $item = $query->where('enabled', 1)->get();
-        $search = array("code" => $request->get('code', ''), "name" => $request->get('name', ''));
+        $search = array("code" => $request->get('code', ''),
+            "name" => $request->get('name', ''),
+            "status" => $request->get('status', ''));
         return view('item.index', compact('item', 'search'));
     }
 

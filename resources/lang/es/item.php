@@ -32,5 +32,8 @@ return [
     'search_btn' => 'Buscar',
     'clear_btn' => 'Limpiar',
     'search_code' => 'Codigo',
-    'search_name' => 'Nombre'
+    'search_name' => 'Nombre',
+    'stock_status' => 'Existencia',
+    'stock_status1' => 'Igual a 0',
+    'stock_status2' => 'Mayor a 0'
 ];
