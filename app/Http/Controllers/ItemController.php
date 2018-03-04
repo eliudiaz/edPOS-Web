@@ -25,6 +25,7 @@ class ItemController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @return Response
      */
     public function index(Request $request)
@@ -48,6 +49,10 @@ class ItemController extends Controller
         return view('item.index', compact('item', 'search'));
     }
 
+    /**
+     *
+     * @return json items list
+     */
     public function listAll()
     {
         $items = Item::where('enabled', 1)->get();

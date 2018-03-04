@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class CustomerDiscountField extends Migration
@@ -12,7 +11,9 @@ class CustomerDiscountField extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('customers', function ($table) {
+            $table->boolean('discount_percentage')->nullable(true)->defalt(0);
+        });
     }
 
     /**
