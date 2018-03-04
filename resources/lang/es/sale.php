@@ -26,4 +26,5 @@ return [
     'qty' => 'Cantidad',
     'print' => 'Imprimir',
     'new_sale' => 'Nueva Venta',
+    'discount' => 'Descuento',
 ];

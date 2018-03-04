@@ -49,6 +49,7 @@ class SaleTempApiController extends Controller
         $SaleTemps->item_id = $request->get('item_id');
         $SaleTemps->cost_price = $request->get('cost_price');
         $SaleTemps->selling_price = $request->get('selling_price');
+        $SaleTemps->discount = $request->get('discount');
         $SaleTemps->quantity = 1;
         $SaleTemps->total_cost = $request->get('cost_price');
         $SaleTemps->total_selling = $request->get('selling_price');
@@ -91,6 +92,7 @@ class SaleTempApiController extends Controller
         $SaleTemps->selling_price = $request->get('selling_price');
         $SaleTemps->total_cost = $request->get('total_cost');
         $SaleTemps->total_selling = $request->get('total_selling');
+        $SaleTemps->discount = $request->get('discount');
         $SaleTemps->save();
         return $SaleTemps;
     }

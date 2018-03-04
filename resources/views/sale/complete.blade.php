@@ -35,7 +35,7 @@
                         @foreach($saleItems as $value)
                             <tr>
                                 <td>{{$value->item->item_name}}</td>
-                                <td>{{$value->selling_price}}</td>
+                                <td>{{$value->selling_price-$value->discount}}</td>
                                 <td>{{$value->quantity}}</td>
                                 <td>{{$value->total_selling}}</td>
                             </tr>

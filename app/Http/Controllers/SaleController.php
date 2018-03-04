@@ -71,6 +71,7 @@ class SaleController extends Controller
             $saleItemsData->quantity = $value->quantity;
             $saleItemsData->total_cost = $value->total_cost;
             $saleItemsData->total_selling = $value->total_selling;
+            $saleItemsData->discount = $value->discount;
             $saleItemsData->save();
             //process inventory
             $items = Item::find($value->item_id);
@@ -119,7 +120,7 @@ class SaleController extends Controller
         foreach ($saleItems as $saleItem) {
             $invoiceDetail[] = array("code" => $saleItem->item_id,
                 "description" => $saleItem->item_id . " - " . $saleItem->item->item_name,
-                "unit_price" => number_format($saleItem->selling_price, 2, '.', ','),
+                "unit_price" => number_format($saleItem->selling_price-$saleItem->discount, 2, '.', ','),
                 "quantity" => $saleItem->quantity,
                 "subtotal" => number_format($saleItem->total_selling, 2, '.', ','));
             $invoiceTotal = $invoiceTotal + $saleItem->total_selling;
