@@ -7,6 +7,11 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">{{trans('customer.new_customer')}}</div>
 				<div class="panel-body">
+					@if (Session::has('error_msg'))
+						<div class="alert alert-danger">
+							{{ Session::get('error_msg') }}
+						</div>
+					@endif
 					{!! Html::ul($errors->all()) !!}
 
 					{!! Form::open(array('url' => 'customers', 'files' => true)) !!}
@@ -39,6 +44,11 @@
 					<div class="form-group">
 					{!! Form::label('address', trans('customer.address')) !!}
 					{!! Form::text('address', Input::old('address'), array('class' => 'form-control')) !!}
+					</div>
+
+					<div class="form-group">
+						{!! Form::label('discount_percentage', trans('customer.discount_percentage')) !!}
+						{!! Form::text('discount_percentage', Input::old('discount_percentage'), array('class' => 'form-control')) !!}
 					</div>
 
 					<div class="form-group">

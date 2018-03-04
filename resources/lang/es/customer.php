@@ -20,4 +20,6 @@ return [
     'edit' => 'Editar',
     'delete' => 'Borrar',
     'update_customer' => 'Actualiar Cliente',
+    'discount_percentage'=>'Descuento (%)',
+    'duplicated_error'=>'Nit ingresado ya existe'
 ];

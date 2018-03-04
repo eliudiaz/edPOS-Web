@@ -8,6 +8,11 @@
 				<div class="panel-heading">{{trans('customer.update_customer')}}</div>
 
 				<div class="panel-body">
+					@if (Session::has('error_msg'))
+						<div class="alert alert-danger">
+							{{ Session::get('error_msg') }}
+						</div>
+					@endif
 					{!! Html::ul($errors->all()) !!}
 
 					{!! Form::model($customer, array('route' => array('customers.update', $customer->id), 'method' => 'PUT', 'files' => true)) !!}
@@ -40,6 +45,11 @@
 					<div class="form-group">
 					{!! Form::label('addrees', trans('customer.address')) !!}
 					{!! Form::text('address', null, array('class' => 'form-control')) !!}
+					</div>
+
+					<div class="form-group">
+						{!! Form::label('discount_percentage', trans('customer.discount_percentage')) !!}
+						{!! Form::text('discount_percentage', null, array('class' => 'form-control')) !!}
 					</div>
 
 					<div class="form-group">

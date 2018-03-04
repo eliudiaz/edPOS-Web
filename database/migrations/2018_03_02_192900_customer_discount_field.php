@@ -12,7 +12,7 @@ class CustomerDiscountField extends Migration
     public function up()
     {
         Schema::table('customers', function ($table) {
-            $table->boolean('discount_percentage')->nullable(true)->defalt(0);
+            $table->decimal('discount_percentage')->nullable(true)->defalt(0);
         });
     }
 
