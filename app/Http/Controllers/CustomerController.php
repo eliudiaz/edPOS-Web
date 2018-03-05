@@ -29,6 +29,12 @@ class CustomerController extends Controller
         return view('customer.index')->with('customer', $customers);
     }
 
+    public function listAll()
+    {
+        $customers = Customer::select('name', 'id', 'account', 'discount_percentage')->get();
+        return json_encode($customers);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

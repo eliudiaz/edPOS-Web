@@ -31,10 +31,9 @@ class SaleController extends Controller
     public function index()
     {
         $sales = Sale::orderBy('id', 'desc')->first();
-        $customers = Customer::lists('name', 'id');
-        return view('sale.index')
-            ->with('sale', $sales)
-            ->with('customer', $customers);
+        $customers = Customer::lists('name', 'id', 'discount_percentage');
+        return view('sale.index', compact('sales', 'customers'));
+
     }
 
     /**
@@ -120,7 +119,7 @@ class SaleController extends Controller
         foreach ($saleItems as $saleItem) {
             $invoiceDetail[] = array("code" => $saleItem->item_id,
                 "description" => $saleItem->item_id . " - " . $saleItem->item->item_name,
-                "unit_price" => number_format($saleItem->selling_price-$saleItem->discount, 2, '.', ','),
+                "unit_price" => number_format($saleItem->selling_price - $saleItem->discount, 2, '.', ','),
                 "quantity" => $saleItem->quantity,
                 "subtotal" => number_format($saleItem->total_selling, 2, '.', ','));
             $invoiceTotal = $invoiceTotal + $saleItem->total_selling;

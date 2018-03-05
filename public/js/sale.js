@@ -1,8 +1,9 @@
-(function () {
+(function (angular) {
     var app = angular.module('tutapos', []);
 
     app.controller("SearchItemCtrl", ['$scope', '$http', function ($scope, $http) {
         $scope.customer = null;
+        $scope.customerRef = null;
         $scope.items = [];
         $http.get('api/item').success(function (data) {
             $scope.items = data;
@@ -12,10 +13,17 @@
         $http.get('api/saletemp').success(function (data, status, headers, config) {
             $scope.saletemp = data;
         });
+        $scope.customers = [];
+        $http.get('api/customers').success(function (data) {
+            $scope.customers = data;
+        });
+        $scope.selectCustomer = function () {
+            $scope.customerRef = $scope.customers.filter((c) => c.id == $scope.customer)[0];
+        }
         $scope.addSaleTemp = function (item, newsaletemp) {
             item.discount = 0;
-            if ($scope.customer != null && $scope.customer.discount_percentage && $scope.discount_percentage > 0) {
-                let percentage = $scope.customer.discount_percentage / 100;
+            if ($scope.customerRef != null && $scope.customerRef.discount_percentage &&  $scope.customerRef.discount_percentage > 0) {
+                let percentage = $scope.customerRef.discount_percentage / 100;
                 item.discount = item.selling_price * percentage;
             }
             $http.post('api/saletemp', {
@@ -31,7 +39,7 @@
             });
         }
         $scope.updateSaleTemp = function (newsaletemp) {
-            if(newsaletemp.selling_price<newsaletemp.discount){
+            if (newsaletemp.selling_price < newsaletemp.discount) {
                 alert('Descuento no puede ser mayor al precio!');
                 return;
             }
@@ -61,4 +69,4 @@
         }
 
     }]);
-})();
+})(angular);

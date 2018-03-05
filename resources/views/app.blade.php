@@ -11,9 +11,9 @@
     <link href="{{ asset('/css/bootstrap-datepicker3.min.css') }}" rel="stylesheet">
     <!-- Fonts -->
     <link href="{{ asset('/css/google-fonts.css') }}" rel='stylesheet' type='text/css'>
-    {{--<link rel="shortcut icon" href="http://tutahosting.net/wp-content/uploads/2015/01/tutaico.png" type="image/x-icon"/>--}}
+{{--<link rel="shortcut icon" href="http://tutahosting.net/wp-content/uploads/2015/01/tutaico.png" type="image/x-icon"/>--}}
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

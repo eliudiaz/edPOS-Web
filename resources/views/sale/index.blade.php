@@ -40,7 +40,7 @@
                                     <div class="form-group">
                                         <label for="invoice" class="col-sm-3 control-label">{{trans('sale.invoice')}}</label>
                                         <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="invoice" value="@if ($sale) {{$sale->id + 1}} @else 1 @endif" readonly/>
+                                        <input type="text" class="form-control" id="invoice" value="@if ($sales) {{$sales->id + 1}} @else 1 @endif" readonly/>
                                         </div>
                                     </div>
 
@@ -55,7 +55,8 @@
                                     <div class="form-group">
                                         <label for="customer_id" class="col-sm-4 control-label">{{trans('sale.customer')}}</label>
                                         <div class="col-sm-8">
-                                        {!! Form::select('customer_id', $customer, Input::old('customer_id'), array('class' => 'form-control')) !!}
+                                        {!! Form::select('customer_id', $customers, Input::old('customer_id'),
+                                         array('class' => 'form-control','ng-model'=>'customer','ng-change'=>'selectCustomer()')) !!}
                                         </div>
                                     </div>
 
@@ -83,7 +84,9 @@
                                 <td>@{{newsaletemp.item.item_name}}</td>
                                 <td>@{{newsaletemp.item.selling_price | currency:"Q."}}</td>
                                 <td><input type="text" style="text-align:center" autocomplete="off" name="quantity" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.quantity" size="2"></td>
-                                <td><input type="text" style="text-align:center" autocomplete="off" name="discount" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.discount" size="5"></td>
+                                <td><input type="text" style="text-align:center" autocomplete="off" name="discount" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.discount" size="5">
+                                (@{{ customerRef.discount_percentage || 0 }} %)
+                                </td>
                                 <td>@{{(newsaletemp.selling_price * newsaletemp.quantity)-newsaletemp.discount | currency:"Q."}}</td>
                                 <td><button class="btn btn-danger btn-xs" type="button" ng-click="removeSaleTemp(newsaletemp.id)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
                             </tr>

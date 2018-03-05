@@ -45,7 +45,9 @@ Route::group(['middleware' => 'languange'], function()
 
 	Route::resource('employees', 'EmployeeController');
 
-//	Route::resource('api/item', 'ReceivingApiController');
+
+    Route::resource('api/customers', 'CustomerController@listAll');
+
     Route::resource('api/item', 'ItemController@listAll');
 	Route::resource('api/receivingtemp', 'ReceivingTempApiController');
 
