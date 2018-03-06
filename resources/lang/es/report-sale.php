@@ -18,6 +18,7 @@ return [
     'status' => 'Estado',
     'active' => 'Activa',
     'voided' => 'Anulada',
+    'void' => 'Anular',
     'detail' => 'Detalle',
     'item_id' => 'ID',
     'item_name' => 'Producto',

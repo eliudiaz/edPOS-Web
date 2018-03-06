@@ -37,22 +37,40 @@ class SaleReportController extends Controller
             $period = 'period_custom';
         } else {
             $to = Carbon::now();
-            $from = $to->copy()->addDay(-1)->startOfWeek();
-            $period = 'period_weekly';
+            $from = $to->copy()->startOfMonth();
+            $period = 'period_monthly';
 
         }
 
-        $sales = Sale::whereBetween('created_at', array($from, $to))->get();
-        $salesGrandTotal = SaleItem::whereBetween('created_at', array($from, $to))->sum('total_selling');
-        $salesGrandProfit = SaleItem::whereBetween('created_at', array($from, $to))->sum('total_selling') - SaleItem::whereBetween('created_at', array($from, $to))->sum('total_cost');
+        $saleReport = Sale::whereBetween('created_at', array($from, $to))->get();
+        $grandTotal = SaleItem::whereBetween('created_at', array($from, $to))
+            ->whereIn('sale_id', function ($query) use ($from, $to) {
+                $query->select('id')
+                    ->from(with(new Sale)->getTable())
+                    ->whereBetween('created_at', array($from, $to))
+                    ->where('status', 'active');
+            })->sum('total_selling');
+        $grandProfit = SaleItem::whereBetween('created_at', array($from, $to))
+                ->whereIn('sale_id', function ($query) use ($from, $to) {
+                    $query->select('id')
+                        ->from(with(new Sale)->getTable())
+                        ->whereBetween('created_at', array($from, $to))
+                        ->where('status', 'active');
+                })->sum('total_selling') - SaleItem::whereBetween('created_at', array($from, $to))
+                ->whereIn('sale_id', function ($query) use ($from, $to) {
+                    $query->select('id')
+                        ->from(with(new Sale)->getTable())
+                        ->whereBetween('created_at', array($from, $to))
+                        ->where('status', 'active');
+                })->sum('total_cost');
 
-        return view('report.sale')
-            ->with('saleReport', $sales)
-            ->with('period', $period)
-            ->with('from', $from->format('d-m-Y'))
-            ->with('to', $to->format('d-m-Y'))
-            ->with('grandTotal', $salesGrandTotal)
-            ->with('grandProfit', $salesGrandProfit);
+        $from = $from->format('d/m/Y');
+        $to = $to->format('d/m/Y');
+
+        $criteria = array('from' => $from,
+            'to' => $to, 'period' => $period);
+        return view('report.sale', compact('grandTotal',
+            'grandProfit', 'criteria', 'saleReport'));
 
     }
 

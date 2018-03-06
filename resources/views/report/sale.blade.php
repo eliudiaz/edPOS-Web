@@ -12,7 +12,8 @@
                         <div class="row">
                             <div class="col-md-10">
                                 <div class="well well-sm"><strong>{{trans('report-sale.title_info')}}:</strong>
-                                    {{trans('report-sale.'.$period)." ( $from - $to )"}}</div>
+                                    {{trans('report-sale.'.$criteria['period'])." ( ".$criteria['from']." - ".$criteria['to']." )"}}
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -26,20 +27,20 @@
                                 </div>
                             </div>
                         </div>
-                        <form class="form-inline" method="get" action="/reports/sales-filter">
+                        {!! Form::model($criteria, array('route' => array('report.sales.filter'), 'method' => 'GET','class'=>'form-inline')) !!}
                             {!! Form::label('from', trans('report-sale.date_from') .' *') !!}
                             <div class="input-group date" data-provide="datepicker" data-date-format="dd/m/yyyy">
 
-                                {!! Form::text('from', Input::old('from'), array('class' => 'form-control','value'=>$from)) !!}
+                                {!! Form::text('from', Input::old('from'), array('class' => 'form-control','value'=>$criteria['from'])) !!}
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                             </div>
                             {!! Form::label('to', trans('report-sale.date_to') .' *') !!}
                             <div class="input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy">
-                                {!! Form::text('to', Input::old('to'), array('class' => 'form-control','value'=>$to)) !!}
+                                {!! Form::text('to', Input::old('to'), array('class' => 'form-control','value'=>$criteria['to'])) !!}
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                             </div>
                             <button class="btn btn-success" type="submit">Filtrar</button>
-                        </form>
+                        {!! Form::close() !!}
                         <br>
                         <div class="span6">
                             <table class="table table-striped table-bordered">
@@ -77,7 +78,7 @@
                                                 {{trans('report-sale.detail')}}</a>
                                             {!! Form::open(array('url' => 'sales/' . $value->id.'/void', 'class' => 'pull-right')) !!}
                                             {!! Form::hidden('_method', 'PUT') !!}
-                                            {!! Form::submit(trans('item.delete'), array('class' => 'btn btn-warning')) !!}
+                                            {!! Form::submit(trans('report-sale.void'), array('class' => 'btn btn-warning')) !!}
                                             {!! Form::close() !!}
                                         </td>
                                     </tr>

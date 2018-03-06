@@ -42,8 +42,12 @@ Route::group(['middleware' => 'languange'], function () {
     Route::resource('reports/receivings', 'ReceivingReportController@index');
 
     Route::resource('reports/sales', 'SaleReportController@index');
-    Route::resource('reports/sales-filter', 'SaleReportController@filter');
+//    Route::resource('reports/sales-filter', 'SaleReportController@filter');
 
+    Route::get('reports/sales-filter', [
+        'uses' => 'SaleReportController@filter',
+        'as' => 'report.sales.filter'
+    ]);
     Route::resource('employees', 'EmployeeController');
 
 
