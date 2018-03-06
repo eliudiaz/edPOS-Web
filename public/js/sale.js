@@ -39,10 +39,6 @@
             });
         }
         $scope.updateSaleTemp = function (newsaletemp) {
-            if (newsaletemp.selling_price < newsaletemp.discount) {
-                alert('Descuento no puede ser mayor al precio!');
-                return;
-            }
             $http.put('api/saletemp/' + newsaletemp.id, {
                 quantity: newsaletemp.quantity,
                 selling_price: newsaletemp.selling_price,

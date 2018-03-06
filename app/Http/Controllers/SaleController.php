@@ -46,6 +46,15 @@ class SaleController extends Controller
         //
     }
 
+    public function voidSale($id)
+    {
+        $sale = Sale::find($id);
+        $sale->status = 'voided';
+        $sale->save();
+        return Redirect::to('reports/sales');
+
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -58,6 +67,7 @@ class SaleController extends Controller
         $sales->user_id = Auth::user()->id;
         $sales->payment_type = Input::get('payment_type');
         $sales->comments = Input::get('comments');
+        $sales->status = 'active';
         $sales->save();
         // process sale items
         $saleItems = SaleTemp::all();
@@ -104,7 +114,6 @@ class SaleController extends Controller
         SaleTemp::truncate();
         $itemssale = SaleItem::where('sale_id', $saleItemsData->sale_id)->get();
         Session::flash('message', 'You have successfully added sales');
-        //return Redirect::to('receivings');
         return view('sale.complete')
             ->with('sales', $sales)
             ->with('saleItemsData', $saleItemsData)

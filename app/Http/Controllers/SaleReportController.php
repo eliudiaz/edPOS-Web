@@ -4,7 +4,7 @@ use App\Sale;
 use App\SaleItem;
 use Auth;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Http\Request;
 use Redirect;
 
 class SaleReportController extends Controller
@@ -20,18 +20,18 @@ class SaleReportController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return $this->filter();
+        return $this->filter($request);
     }
 
-    public function filter()
+    public function filter(Request $request)
     {
         $empty = "none";
-        $from = Input::get("from", $empty);
-        $to = Input::get("to", $empty);
+        $from = $request->get("from", $empty);
+        $to = $request->get("to", $empty);
 
-        if ($to != $empty && $from != $empty) {
+        if ($request->has('from') && $request->has('from')) {
             $from = Carbon::createFromFormat('d/m/Y', $from);
             $to = Carbon::createFromFormat('d/m/Y', $to);
             $period = 'period_custom';

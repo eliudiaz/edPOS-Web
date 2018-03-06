@@ -100,6 +100,7 @@ class ItemController extends Controller
         $items->cost_price = $request->get('cost_price');
         $items->selling_price = $request->get('selling_price');
         $items->quantity = $request->get('quantity');
+        $items->enabled = true;
         $items->save();
         // process inventory
         if (!$request->has('quantity')) {
@@ -180,6 +181,7 @@ class ItemController extends Controller
         $items->cost_price = Input::get('cost_price');
         $items->selling_price = Input::get('selling_price');
         $items->quantity = Input::get('quantity');
+        $items->enabled = true;
         $items->save();
         // process avatar
         $image = $request->file('avatar');
