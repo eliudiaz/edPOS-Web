@@ -3,6 +3,7 @@
 use App\Customer;
 use App\Http\Requests\CustomerRequest;
 use Auth;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Lang;
 use Image;
 use Input;

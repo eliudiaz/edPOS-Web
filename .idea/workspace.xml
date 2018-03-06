@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcb41daa-e8b1-4273-8ed5-ffb50c9d209f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change beforePath="$PROJECT_DIR$/public/js/sale.js" afterPath="$PROJECT_DIR$/public/js/sale.js" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sale/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/sale/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sale/complete.blade.php" afterPath="$PROJECT_DIR$/resources/views/sale/complete.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,9 +65,59 @@
       <file leaf-file-name="ItemController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="916">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoCompleterTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/TabCompletion/AutoCompleterTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="complete.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/sale/complete.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+              <folding>
+                <marker date="1520286399609" expanded="true" signature="9:14" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="25:34" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="43:114" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="125:194" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="205:272" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="283:346" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="726:748" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="754:777" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="803:824" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="834:857" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="883:905" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="911:929" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1185:1203" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1245:1264" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1306:1323" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1365:1384" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1455:1475" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1548:1571" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1617:1638" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1617:1647" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1617:1655" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1701:1717" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="1763:1784" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2028:2054" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2060:2080" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2424:2443" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2536:2551" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2635:2657" ph="..." />
+                <marker date="1520286399609" expanded="true" signature="2746:2761" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sale.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sale.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sale.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            <state relative-caret-position="575">
+              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -102,8 +147,8 @@
       <file leaf-file-name="CustomerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="550">
+              <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
               <folding>
                 <element signature="e#39#56#0#PHP" expanded="true" />
               </folding>
@@ -217,15 +262,15 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_03_04_144648_add_discount_column_invoice.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_04_150448_add_discount_column_sale_items.php" />
         <option value="$PROJECT_DIR$/resources/lang/es/sale.php" />
-        <option value="$PROJECT_DIR$/resources/views/sale/complete.blade.php" />
         <option value="$PROJECT_DIR$/public/js/bootstrap3-typeahead.min.js" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
         <option value="$PROJECT_DIR$/public/js/angular-bootstrap3-typeahead.js" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" />
         <option value="$PROJECT_DIR$/public/js/sale.js" />
         <option value="$PROJECT_DIR$/resources/views/sale/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/complete.blade.php" />
       </list>
     </option>
   </component>
@@ -357,17 +402,6 @@
             <path>
               <item name="edpos-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="edpos-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="edpos-Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edpos-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="edpos-Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edpos-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -381,7 +415,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/routes.php&#10;itemcontrol&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;customer&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;sale.js&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;salecontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;index&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;complete&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;salre&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;salecontroller&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;customercontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;item&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;SaleTempapi&#9;null&#9;null&#10;ReceivingApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;Sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;ReceivingTempApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;itemcontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;salecontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;inde.&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;itemcontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;add_enabled&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_01_170031_add_enabled_field_to_item.php&#10;edit.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/edit.blade.php&#10;index.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;ItemCo&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;SaleContr&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;comple&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/resources/views/sale/complete.blade.php&#10;SaleRep&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleReportController.php&#10;SaleController&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;CustomerCon&#9;null&#9;null&#10;Customer&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Customer.php&#10;InventoryController&#9;null&#9;null&#10;AppSErvice&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="compl&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;complte&#9;null&#9;null&#10;route&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/routes.php&#10;itemcontrol&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;customer&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;sale.js&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;salecontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;index&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;complete&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;salre&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;salecontroller&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;customercontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;item&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;SaleTempapi&#9;null&#9;null&#10;ReceivingApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;Sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;ReceivingTempApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;itemcontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;salecontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;inde.&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;itemcontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;add_enabled&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_01_170031_add_enabled_field_to_item.php&#10;edit.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/edit.blade.php&#10;index.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;ItemCo&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;SaleContr&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;comple&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/resources/views/sale/complete.blade.php&#10;SaleRep&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleReportController.php&#10;SaleController&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;CustomerCon&#9;null&#9;null&#10;Customer&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Customer.php&#10;InventoryController&#9;null&#9;null&#10;AppSErvice&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -439,15 +473,16 @@
       <workItem from="1519907502439" duration="1340000" />
       <workItem from="1519917980681" duration="9588000" />
       <workItem from="1519996190041" duration="10340000" />
-      <workItem from="1520170246329" duration="19161000" />
+      <workItem from="1520170246329" duration="21295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84010000" />
+    <option name="totallyTimeSpent" value="86144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8564593" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
@@ -455,7 +490,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32535884" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -481,13 +516,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
@@ -926,44 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sale/complete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="37" column="60" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <marker date="1520176605093" expanded="true" signature="9:14" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="25:34" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="43:114" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="125:194" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="205:272" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="283:346" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="726:748" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="754:777" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="803:824" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="834:857" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="883:905" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="911:929" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1185:1203" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1245:1264" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1306:1323" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1365:1384" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1455:1475" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1548:1571" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1617:1638" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1617:1647" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1617:1655" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1701:1717" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="1763:1784" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2028:2054" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2060:2080" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2424:2443" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2536:2551" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2635:2657" ph="..." />
-            <marker date="1520176605093" expanded="true" signature="2746:2761" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_04_144648_add_discount_column_invoice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1055,24 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#39#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SaleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1128,9 +1100,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sale.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="15" lean-forward="false" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="575">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <element signature="e#39#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/TabCompletion/AutoCompleterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/complete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+          <folding>
+            <marker date="1520286399609" expanded="true" signature="9:14" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="25:34" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="43:114" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="125:194" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="205:272" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="283:346" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="726:748" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="754:777" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="803:824" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="834:857" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="883:905" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="911:929" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1185:1203" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1245:1264" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1306:1323" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1365:1384" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1455:1475" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1548:1571" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1617:1638" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1617:1647" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1617:1655" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1701:1717" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="1763:1784" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2028:2054" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2060:2080" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2424:2443" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2536:2551" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2635:2657" ph="..." />
+            <marker date="1520286399609" expanded="true" signature="2746:2761" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

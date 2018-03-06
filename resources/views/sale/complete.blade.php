@@ -67,7 +67,6 @@
     <script>
         var invoice ={!! $invoice_json !!};
 
-
         function printInvoice() {
             var pdf = new jsPDF('p', 'pt', 'letter');
             pdf.setFontSize(10);
@@ -75,12 +74,14 @@
             pdf.text(invoice.created_at, 60, 50);
             pdf.text(invoice.customer.name, 60, 65);
             pdf.text(invoice.customer.address, 60, 80);
-            pdf.text(invoice.customer.code, 370, 80);
+            pdf.text(invoice.customer.code, 390, 80);
 
             var x = 110;
             invoice.items.forEach((i) => {
                 pdf.text(`${i.quantity}`, 40, x);
+                pdf.setFontSize(8);
                 pdf.text(i.description, 100, x);
+                pdf.setFontSize(10);
                 pdf.text(`${i.unit_price}`, 480, x);
                 pdf.text(`${i.subtotal}`, 540, x);
                 x = x + 15;
@@ -93,8 +94,10 @@
                 centSingular: 'CENTAVO'
             });
 
-            pdf.text(lettersTotal, 100, 345);
-            pdf.text(`${invoice.total}`, 540, 345);
+            pdf.setFontSize(8);
+            pdf.text(lettersTotal, 100, 355);
+            pdf.setFontSize(10);
+            pdf.text(`${invoice.total}`, 540, 355);
             pdf.autoPrint();
             pdf.output("dataurlnewwindow");
         }
