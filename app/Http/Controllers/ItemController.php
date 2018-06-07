@@ -44,7 +44,7 @@ class ItemController extends Controller
         }
         $item = $query->where('enabled', 1)
             ->get()
-            ->sortBy('name');
+            ->sortBy('item_name');
         
         $totalItemsWorth = $item->map(function ($value) {
             return $value->quantity * $value->cost_price;
