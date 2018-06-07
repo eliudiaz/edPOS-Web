@@ -43,10 +43,14 @@ class ItemController extends Controller
             $query->where('quantity', $status == 1 ? '=' : '>', 0);
         }
         $item = $query->where('enabled', 1)->get();
+        $totalItemsWorth = $item->map(function ($value) {
+            return $value->quantity * $value->cost_price;
+        })->sum();
         $search = array("code" => $request->get('code', ''),
             "name" => $request->get('name', ''),
             "status" => $request->get('status', ''));
-        return view('item.index', compact('item', 'search'));
+
+        return view('item.index', compact('item', 'search', 'totalItemsWorth'));
     }
 
     /**
