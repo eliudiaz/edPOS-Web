@@ -42,7 +42,10 @@ class ItemController extends Controller
             $status = $request->get("status");
             $query->where('quantity', $status == 1 ? '=' : '>', 0);
         }
-        $item = $query->where('enabled', 1)->get();
+        $item = $query->where('enabled', 1)
+            ->get()
+            ->sortByDesc('name');
+        
         $totalItemsWorth = $item->map(function ($value) {
             return $value->quantity * $value->cost_price;
         })->sum();
