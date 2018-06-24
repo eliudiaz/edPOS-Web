@@ -15,6 +15,9 @@
                 {!!Form::select('status', array(''=>'Todos', '1' => trans('item.stock_status1'),
                             '2' => trans('item.stock_status2')),Input::old('status'), array('class' => 'form-control')) !!}
                 <button class="btn btn-success" type="submit">{{trans('item.search_btn')}}</button>
+                <button class="btn btn-success" id="exportToExcel" type="button">Descargar</button>
+                <input type="hidden" id="export" name="export" />
+                {!!  Form::close() !!}
                 <a class="btn btn-small btn-success"
                    href="{{ URL::to('items') }}">{{trans('item.clear_btn')}}</a>
                 <hr/>
@@ -76,4 +79,14 @@
             </div>
         </div>
     </div>
+@endsection
+@section('javascript-addons')
+    <script type="text/javascript">
+        $(function () {
+            $("#exportToExcel").on('click', function () {
+                $("#export").val(1);
+                $(document.forms[0]).submit();
+            });
+        })
+    </script>
 @endsection

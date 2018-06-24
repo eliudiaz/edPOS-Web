@@ -5,6 +5,7 @@ use App\SaleItem;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Excel;
 use Redirect;
 
 class SaleReportController extends Controller
@@ -43,6 +44,11 @@ class SaleReportController extends Controller
         }
 
         $saleReport = Sale::whereBetween('created_at', array($from, $to))->get();
+
+        if ($request->has('export')) {
+            $this->downloadExcel($saleReport);
+        }
+
         $grandTotal = SaleItem::whereBetween('created_at', array($from, $to))
             ->whereIn('sale_id', function ($query) use ($from, $to) {
                 $query->select('id')
@@ -72,6 +78,16 @@ class SaleReportController extends Controller
         return view('report.sale', compact('grandTotal',
             'grandProfit', 'criteria', 'saleReport'));
 
+    }
+
+    public function downloadExcel($data)
+    {
+        return Excel::create('sales_report', function ($excel) use ($data) {
+            $excel->sheet('Sales', function ($sheet) use ($data) {
+                $sheet->fromArray($data);
+            });
+
+        })->download("xlsx");
     }
 
     /**

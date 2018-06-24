@@ -4,6 +4,7 @@ use App\Http\Requests\ItemRequest;
 use App\Inventory;
 use App\Item;
 use Auth;
+use Excel;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
@@ -45,7 +46,18 @@ class ItemController extends Controller
         $item = $query->where('enabled', 1)
             ->get()
             ->sortByDesc('name');
-        
+
+        if ($request->has("export")) {
+            $items = $item->map(function ($item) {
+                return ['codigo' => $item->upc_ean_isbn,
+                    'nombre' => $item->item_name,
+                    'costo' => $item->cost_price,
+                    'selling_price' => $item->selling_price,
+                    'quantity' => $item->quantity];
+            });
+            return $this->downloadExcel($items);
+        }
+
         $totalItemsWorth = $item->map(function ($value) {
             return $value->quantity * $value->cost_price;
         })->sum();
@@ -64,6 +76,16 @@ class ItemController extends Controller
     {
         $items = Item::where('enabled', 1)->get();
         return Response::json($items);
+    }
+
+    public function downloadExcel($data)
+    {
+        return Excel::create('items', function ($excel) use ($data) {
+            $excel->sheet('Inventario', function ($sheet) use ($data) {
+                $sheet->fromArray($data);
+            });
+
+        })->download("xlsx");
     }
 
     /**

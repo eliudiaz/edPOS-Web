@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcb41daa-e8b1-4273-8ed5-ffb50c9d209f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tutapos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutapos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/item/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/item/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/report/sale.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/sale.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,58 +27,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/item/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="233">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sale.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/report/sale.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="45" column="24" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
               <folding>
                 <element signature="e#39#73#0#PHP" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/item/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTableSeeder.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InventoryController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1173" />
           </provider>
         </entry>
       </file>
@@ -87,10 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>search</find>
-      <find>currency}</find>
-      <find>$</find>
-      <find>&lt;form</find>
       <find>sto</find>
       <find>report</find>
       <find>cu</find>
@@ -116,6 +94,10 @@
       <find>$sale</find>
       <find>salecontroler</find>
       <find>update</find>
+      <find>filter</find>
+      <find>new item</find>
+      <find>new ite</find>
+      <find>open</find>
       <find>close</find>
     </findStrings>
     <replaceStrings>
@@ -130,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/lang/es/supplier.php" />
         <option value="$PROJECT_DIR$/resources/views/supplier/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/supplier/create.blade.php" />
@@ -149,7 +130,6 @@
         <option value="$PROJECT_DIR$/resources/lang/en/sale.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/item.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/item/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/item/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_01_170031_add_enabled_field_to_item.php" />
@@ -166,7 +146,6 @@
         <option value="$PROJECT_DIR$/resources/lang/es/sale.php" />
         <option value="$PROJECT_DIR$/public/js/bootstrap3-typeahead.min.js" />
         <option value="$PROJECT_DIR$/public/js/angular-bootstrap3-typeahead.js" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sale/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
         <option value="$PROJECT_DIR$/resources/views/sale/complete.blade.php" />
@@ -174,13 +153,16 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/lang/es/report-sale.php" />
-        <option value="$PROJECT_DIR$/resources/views/report/sale.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php" />
         <option value="$PROJECT_DIR$/public/js/sale.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" />
         <option value="$PROJECT_DIR$/resources/views/inventory/edit.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php" />
         <option value="$PROJECT_DIR$/resources/views/item/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/report/sale.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" />
       </list>
     </option>
   </component>
@@ -275,6 +257,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/danielstjules/stringy" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -291,6 +277,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,29 +288,47 @@
             <path>
               <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="item" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="report" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="edPOS-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edPOS-Web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="ItemController&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/app/Http/Controllers/ItemController.php&#10;sale.js&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;route&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/routes.php&#10;index&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;salerepcon&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;itemcontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;sales_status&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_06_225300_sales_status_field.php&#10;saleContro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;salecontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;salere&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;compl&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;complte&#9;null&#9;null&#10;itemcontrol&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;customer&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;salecontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;complete&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;salre&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;salecontroller&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;customercontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;item&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;SaleTempapi&#9;null&#9;null&#10;ReceivingApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;Sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;ReceivingTempApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;salecontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;inde.&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;itemcontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;add_enabled&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_01_170031_add_enabled_field_to_item.php&#10;edit.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/edit.blade.php&#10;index.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;ItemCo&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;SaleContr&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;comple&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/resources/views/sale/complete.blade.php&#10;SaleRep&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleReportController.php&#10;SaleController&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;CustomerCon&#9;null&#9;null&#10;Customer&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Customer.php&#10;InventoryController&#9;null&#9;null&#10;AppSErvice&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="itemcon&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/app/Http/Controllers/ItemController.php&#10;ite&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/app/Http/Controllers/ItemController.php&#10;itemcom&#9;null&#9;null&#10;app&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/config/app.php&#10;composer&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/composer.json&#10;ItemController&#9;FILE&#9;file://C:/Users/Eliu/Documents/personal-repos/edPOS-Web/app/Http/Controllers/ItemController.php&#10;sale.js&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;route&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/routes.php&#10;index&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;salerepcon&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;itemcontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;sales_status&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_06_225300_sales_status_field.php&#10;saleContro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;salecontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;salere&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;compl&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;complte&#9;null&#9;null&#10;itemcontrol&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;customer&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;salecontro&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/public/js/sale.js&#10;complete&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/complete.blade.php&#10;salre&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleReportController.php&#10;salecontroller&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;customercontroll&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/CustomerController.php&#10;item&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;SaleTempapi&#9;null&#9;null&#10;ReceivingApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;Sale&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;ReceivingTempApiController&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ReceivingTempApiController.php&#10;salecontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/SaleController.php&#10;inde.&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/sale/index.blade.php&#10;itemcontr&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;add_enabled&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/database/migrations/2018_03_01_170031_add_enabled_field_to_item.php&#10;edit.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/edit.blade.php&#10;index.blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;ItemCo&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/app/Http/Controllers/ItemController.php&#10;blade&#9;FILE&#9;file://C:/Users/eliud/Documents/GitPersonal/edpos-Web/resources/views/item/index.blade.php&#10;SaleContr&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;comple&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/resources/views/sale/complete.blade.php&#10;SaleRep&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleReportController.php&#10;SaleController&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Http/Controllers/SaleController.php&#10;CustomerCon&#9;null&#9;null&#10;Customer&#9;FILE&#9;file://D:/xampp/htdocs/tutapos/app/Customer.php&#10;InventoryController&#9;null&#9;null&#10;AppSErvice&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../columbia-county/columbiacounty-portal" />
@@ -389,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99828000" />
+    <option name="totallyTimeSpent" value="103040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -397,23 +402,25 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50040483" side_tool="true" weight="0.3283582" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3283582" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49791667" weight="0.6532374" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3283582" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49791667" weight="0.6529851" />
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30526316" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32793522" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50040483" side_tool="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
     </layout>
   </component>
@@ -424,39 +431,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/lang/es/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/sale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/public/js/numbers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="171" column="30" selection-start-line="167" selection-start-column="3" selection-end-line="171" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -478,13 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/item/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -585,9 +557,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_04_144648_add_discount_column_invoice.php" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -597,13 +566,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/bootstrap3-typeahead.min.js" />
     <entry file="file://$PROJECT_DIR$/public/js/angular-bootstrap3-typeahead.js" />
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/psy/psysh/test/Psy/Test/TabCompletion/AutoCompleterTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -646,24 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/report/sale.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="80" column="79" selection-start-line="80" selection-start-column="79" selection-end-line="80" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/es/report-sale.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -678,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sale/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="94" column="41" lean-forward="true" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -728,27 +669,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="91" column="27" lean-forward="true" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ComparisonMatcherSpec.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SaleReportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="82" selection-start-column="3" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#39#73#0#PHP" expanded="true" />
+            <element signature="e#39#52#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="112" selection-start-line="27" selection-start-column="112" selection-end-line="27" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/item/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/item/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        <state relative-caret-position="233">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/report/sale.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="78">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ItemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding>
+            <element signature="e#39#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -147,6 +147,10 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+        /*
+         * Excel
+         */
+        'Maatwebsite\Excel\ExcelServiceProvider',
 	],
 
 	/*
@@ -198,6 +202,7 @@ return [
 		'Html'		=> 'Collective\Html\HtmlFacade',
 		'Image' 	=> 'Intervention\Image\Facades\Image',
 
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
 	],
 
 ];
