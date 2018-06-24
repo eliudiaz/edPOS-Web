@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">{{trans('report-sale.reports')}}
                         - {{trans('report-sale.sales_report')}}</div>
@@ -28,18 +28,20 @@
                             </div>
                         </div>
                         {!! Form::model($criteria, array('route' => array('report.sales.filter'), 'method' => 'GET','class'=>'form-inline')) !!}
-                            {!! Form::label('from', trans('report-sale.date_from') .' *') !!}
-                            <div class="input-group date" data-provide="datepicker" data-date-format="dd/m/yyyy">
+                        {!! Form::label('from', trans('report-sale.date_from') .' *') !!}
+                        <div class="input-group date" data-provide="datepicker" data-date-format="dd/m/yyyy">
 
-                                {!! Form::text('from', Input::old('from'), array('class' => 'form-control','value'=>$criteria['from'])) !!}
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                            </div>
-                            {!! Form::label('to', trans('report-sale.date_to') .' *') !!}
-                            <div class="input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy">
-                                {!! Form::text('to', Input::old('to'), array('class' => 'form-control','value'=>$criteria['to'])) !!}
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
-                            </div>
-                            <button class="btn btn-success" type="submit">Filtrar</button>
+                            {!! Form::text('from', Input::old('from'), array('class' => 'form-control','value'=>$criteria['from'])) !!}
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        </div>
+                        {!! Form::label('to', trans('report-sale.date_to') .' *') !!}
+                        <div class="input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy">
+                            {!! Form::text('to', Input::old('to'), array('class' => 'form-control','value'=>$criteria['to'])) !!}
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                        </div>
+                        <button class="btn btn-success" type="submit">Filtrar</button>
+                        <a class="btn btn-success" type="button" id="exportToExcel">Descargar</a>
+                        <input type="hidden" id="export" name="export" />
                         {!! Form::close() !!}
                         <br>
                         <div class="span6">
@@ -115,4 +117,15 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('javascript-addons')
+    <script type="text/javascript">
+        $(function () {
+            $("#exportToExcel").on('click', function () {
+                $("#export").val(1);
+                $(document.forms[0]).submit();
+            });
+        })
+    </script>
 @endsection
