@@ -5,7 +5,7 @@
 
 <div class="container-fluid">
    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> {{trans('sale.sales_register')}}</div>
 
@@ -74,6 +74,7 @@
                             <tr>
                                 <th>{{trans('sale.item_id')}}</th>
                                 <th>{{trans('sale.item_name')}}</th>
+                                <th>{{trans('sale.cost')}}</th>
                                 <th>{{trans('sale.price')}}</th>
                                 <th>{{trans('sale.quantity')}}</th>
                                 <th>{{trans('sale.discount')}}</th>
@@ -82,6 +83,7 @@
                             <tr ng-repeat="newsaletemp in saletemp">
                                 <td>@{{newsaletemp.item_id}}</td>
                                 <td>@{{newsaletemp.item.item_name}}</td>
+                                <td>@{{newsaletemp.item.cost_price | currency:"Q."}}</td>
                                 <td>@{{newsaletemp.item.selling_price | currency:"Q."}}</td>
                                 <td><input type="text" style="text-align:center" autocomplete="off" name="quantity" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.quantity" size="2"></td>
                                 <td><input type="text" style="text-align:center" autocomplete="off" name="discount" ng-change="updateSaleTemp(newsaletemp)" ng-model="newsaletemp.discount" size="5">

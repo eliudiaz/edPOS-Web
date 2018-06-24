@@ -10,7 +10,7 @@ return [
     'customer' => 'Cliente',
     'item_id' => 'ID',
     'item_name' => 'Producto',
-    'price' => 'Precio (Q)',
+    'cost' => 'Precio C.',
     'quantity' => 'Cantidad',
     'stock_worth' => 'Valor Inventario (Q)',
     'total' => 'Total',
@@ -22,7 +22,7 @@ return [
     //struk
     'sale_id' => 'ID',
     'item' => 'Producto',
-    'price' => 'Precio',
+    'price' => 'Precio V.',
     'qty' => 'Cantidad',
     'print' => 'Imprimir',
     'new_sale' => 'Nueva Venta',
