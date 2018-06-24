@@ -72,7 +72,7 @@
                     <tfoot>
                         <tr>
                            <td colspan="5"></td>
-                            <td colspan="5">{{ $totalItemsWorth }}</td>
+                            <td colspan="5">{{ number_format( $totalItemsWorth , 2, '.', ',')}}</td>
                         </tr>
                     </tfoot>
                 </table>

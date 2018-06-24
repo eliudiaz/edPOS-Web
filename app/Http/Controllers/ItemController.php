@@ -45,7 +45,7 @@ class ItemController extends Controller
         }
         $item = $query->where('enabled', 1)
             ->get()
-            ->sortByDesc('name');
+            ->sortBy('item_name');
 
         if ($request->has("export")) {
             $items = $item->map(function ($item) {
