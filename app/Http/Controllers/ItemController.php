@@ -49,11 +49,11 @@ class ItemController extends Controller
 
         if ($request->has("export")) {
             $items = $item->map(function ($item) {
-                return ['codigo' => $item->upc_ean_isbn,
-                    'nombre' => $item->item_name,
-                    'costo' => $item->cost_price,
-                    'selling_price' => $item->selling_price,
-                    'quantity' => $item->quantity];
+                return ['Codigo' => $item->upc_ean_isbn,
+                    'Nombre' => $item->item_name,
+                    'P. Costo' => $item->cost_price,
+                    'P. Venta' => $item->selling_price,
+                    'Inventario' => $item->quantity];
             });
             return $this->downloadExcel($items);
         }
