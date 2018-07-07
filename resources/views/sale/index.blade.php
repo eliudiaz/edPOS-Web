@@ -1,8 +1,5 @@
 @extends('app')
 @section('content')
-{!! Html::script('js/angular.min.js', array('type' => 'text/javascript')) !!}
-{!! Html::script('js/sale.js', array('type' => 'text/javascript')) !!}
-
 <div class="container-fluid">
    <div class="row">
         <div class="col-md-12">
@@ -55,8 +52,8 @@
                                     <div class="form-group">
                                         <label for="customer_id" class="col-sm-4 control-label">{{trans('sale.customer')}}</label>
                                         <div class="col-sm-8">
-                                        {!! Form::select('customer_id', $customers, Input::old('customer_id'),
-                                         array('class' => 'form-control','ng-model'=>'customer','ng-change'=>'selectCustomer()')) !!}
+                                            <input type="text" ng-model="customerRef"
+                                                   typeahead="customer as (customer.account + '-' + customer.name) for customer in findCustomer(customers, $viewValue) | limitTo:50" class="form-control">
                                         </div>
                                     </div>
 
@@ -149,4 +146,8 @@
         </div>
     </div>
 </div>
+{!! Html::script('js/angular.min.js', array('type' => 'text/javascript')) !!}
+{!! Html::script('js/boostrap-ui.0.13.0.js', array('type' => 'text/javascript')) !!}
+{!! Html::script('js/sale.js', array('type' => 'text/javascript')) !!}
+
 @endsection
