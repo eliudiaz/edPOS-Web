@@ -31,7 +31,12 @@
                 @if (Session::has('error'))
                     <div class="alert alert-danger">{{ Session::get('error') }}</div>
                 @endif
-
+                <table class="table table-striped table-bordered">
+                    <tr>
+                        <td>Valoracion Inventario: </td>
+                        <td rows="6">Q. {{ number_format( $totalItemsWorth , 2, '.', ',')}}</td>
+                    </tr>
+                </table>
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
