@@ -45,6 +45,10 @@ class ItemController extends Controller
         }
         $item = $query->where('enabled', 1)
             ->get()
+            ->map(function ($it) {
+                $it->quantity = $it->quantity > 0 ? $it->quantity : 0;
+                return $it;
+            })
             ->sortBy('item_name');
 
         if ($request->has("export")) {
@@ -53,7 +57,7 @@ class ItemController extends Controller
                     'Nombre' => $item->item_name,
                     'P. Costo' => $item->cost_price,
                     'P. Venta' => $item->selling_price,
-                    'Inventario' => $item->quantity];
+                    'Inventario' => $item->quantity > 0 ? $item->quantity : 0];
             });
             return $this->downloadExcel($items);
         }
