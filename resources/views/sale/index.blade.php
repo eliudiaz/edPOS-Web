@@ -53,7 +53,9 @@
                                         <label for="customer_id" class="col-sm-4 control-label">{{trans('sale.customer')}}</label>
                                         <div class="col-sm-8">
                                             <input type="text" ng-model="customerRef"
-                                                   typeahead="customer as (customer.account + '-' + customer.name) for customer in findCustomer(customers, $viewValue) | limitTo:50" class="form-control">
+                                                   typeahead="customer as (customer.account + '-' + customer.name) for customer in findCustomer(customers, $viewValue) | limitTo:50"
+                                                   class="form-control">
+                                            <input type="hidden" name="customer_id" ng-value="customerRef.id" />
                                         </div>
                                     </div>
 

@@ -69,6 +69,7 @@
 
         function printInvoice() {
             var pdf = new jsPDF('p', 'pt', 'letter');
+            pdf.setFont("helvetica");
             pdf.setFontSize(10);
             pdf.setFillColor(0);
             pdf.text(invoice.created_at, 60, 50);
