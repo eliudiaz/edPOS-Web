@@ -63,7 +63,7 @@ class ItemController extends Controller
         }
 
         $totalItemsWorth = $item->map(function ($value) {
-            return $value->quantity * $value->cost_price;
+            return $value->quantity <= 0 ? 0 : $value->quantity * $value->cost_price;
         })->sum();
         $search = array("code" => $request->get('code', ''),
             "name" => $request->get('name', ''),
